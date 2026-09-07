@@ -13,7 +13,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LeadForm } from "@/components/LeadForm";
 import { QuoteModal, FloatingContactBar } from "@/components/QuoteModal";
-import { BRAND, KENYA_LOCATIONS } from "@/data/namtechData";
+import { BRAND, KENYA_LOCATIONS } from "@/data/namitechData";
 import { Button } from "@/components/ui/button";
 
 export default function ContactPage() {
@@ -31,7 +31,7 @@ export default function ContactPage() {
               Fast Response Across Kenya
             </div>
             <h1 className="text-3xl sm:text-5xl font-extrabold text-white font-['Space_Grotesk'] tracking-tight">
-              Contact NamTech Kenya
+              Contact NamiTech Kenya
             </h1>
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
               Ready to upgrade your internet connection or secure your property? Reach our technicians directly or request an on-site survey.

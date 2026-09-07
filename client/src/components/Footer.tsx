@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "wouter";
 import { Phone, Mail, MapPin, MessageSquare, ShieldCheck, Wifi, ArrowUpRight } from "lucide-react";
-import { NamTechLogo } from "./NamTechLogo";
-import { BRAND, KENYA_LOCATIONS } from "../data/namtechData";
+import { NamiTechLogo } from "./NamiTechLogo";
+import { BRAND, KENYA_LOCATIONS } from "../data/namitechData";
 
 export const Footer: React.FC = () => {
   return (
@@ -14,9 +14,9 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800/80">
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
-            <NamTechLogo withTagline={true} size="lg" />
+            <NamiTechLogo withTagline={true} size="lg" />
             <p className="text-sm text-slate-300 leading-relaxed pr-4 mt-2">
-              NamTech delivers high-speed networking, reliable home/office internet setups, structured cabling, and 24/7 security camera solutions across Kenya. Connecting and securing homes, estates, and enterprise facilities.
+              NamiTech delivers high-speed networking, reliable home/office internet setups, structured cabling, and 24/7 security camera solutions across Kenya. Connecting and securing homes, estates, and enterprise facilities.
             </p>
 
             <div className="pt-2 flex flex-wrap gap-2 text-xs">
@@ -152,7 +152,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom copyright & SEO footer */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
-          <p>© {new Date().getFullYear()} NamTech Kenya. All Rights Reserved. Connecting & Securing the Nation.</p>
+          <p>© {new Date().getFullYear()} NamiTech Kenya. All Rights Reserved. Connecting & Securing the Nation.</p>
           <div className="flex items-center gap-4">
             <span className="text-slate-400">Fast Internet • CCTV Installation • Structured Cabling</span>
           </div>

@@ -1,7 +1,7 @@
-# NamTech Kenya - Modern Responsive Website & SEO Implementation
+# NamiTech Kenya - Modern Responsive Website & SEO Implementation
 
 ## 1. Project Overview & Identity
-- **Brand Name**: NamTech Kenya
+- **Brand Name**: NamiTech Kenya
 - **Tagline**: Connecting & Securing the Nation
 - **Target Market**: Kenya (Nairobi, Kiambu, Mombasa, Kisumu, Nakuru, Eldoret & Nationwide)
 - **Primary Phone / WhatsApp**: `+254 738 735 545`
@@ -12,13 +12,13 @@
 
 ## 2. Multi-Page Architecture & Route Map
 1. **Home (`/`)**:
-   - High-impact cyber-network hero with full integration of the supplied NamTech master graphic.
+   - High-impact cyber-network hero with full integration of the supplied NamiTech master graphic.
    - Exact headline: *"Fast Internet & Advanced CCTV Installation in Kenya"*.
-   - Exact subheadline: *"NamTech delivers high-speed networking, reliable home/office internet setups, and 24/7 security camera solutions."*
+   - Exact subheadline: *"NamiTech delivers high-speed networking, reliable home/office internet setups, and 24/7 security camera solutions."*
    - Clear conversion CTAs: **[Get a Free Quote]** (smoothly links to Contact form & opens dynamic modal) and **[Call Us: +254 738 735 545]**.
    - Core Services split: **Internet & Networking Setup** and **CCTV & Security Solutions**.
    - Interactive **Kenyan Installation Cost Estimator (KES)** with real-time budget calculations.
-   - **Why Choose NamTech?** section highlighting *Local Expertise*, *Fast Installation (24-48h)*, and *24/7 Support & Maintenance*.
+   - **Why Choose NamiTech?** section highlighting *Local Expertise*, *Fast Installation (24-48h)*, and *24/7 Support & Maintenance*.
    - Local social proof and client testimonials from Nairobi, Mombasa, and Kisumu.
    - Comprehensive Lead Form with Kenyan phone formatting and WhatsApp auto-redirect.
 
@@ -46,19 +46,19 @@
   - `fiber internet installation`
   - `structured cabling Kenya`
   - `reliable WiFi installers Nairobi`
-  - `NamTech networking`
+  - `NamiTech networking`
 - **Metadata**: Meta title, OpenGraph tags, description, and keyword headers embedded in `index.html`.
 
 ---
 
 ## 4. Visual Assets & Media Strategy
-- **Master Hero Graphic**: Uploaded to WebDev cloud storage (`/manus-storage/namtech-hero_36867b26.jpg`) and prominently featured in the Hero section and meta tags.
+- **Master Hero Graphic**: Uploaded to WebDev cloud storage (`/manus-storage/namitech-hero_36867b26.jpg`) and prominently featured in the Hero section and meta tags.
 - **Micro-Assets**:
   - Server rack and neat cabling highlight: `/manus-storage/service-networking-rack_7442e541.jpg`
   - CCTV technician install preview: `/manus-storage/service-cctv-technician_460f33f1.jpg`
   - Operations NOC room: `/manus-storage/operations-noc_4cc85d1e.jpg`
   - Kenya network fiber map: `/manus-storage/kenya-fiber-map_a289a8ea.jpg`
-  - Stylized NamTech Kenya logo with camera head & cyber nodes.
+  - Stylized NamiTech Kenya logo with camera head & cyber nodes.
 
 ---
 

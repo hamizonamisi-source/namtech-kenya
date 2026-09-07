@@ -15,7 +15,7 @@ import {
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { QuoteModal, FloatingContactBar } from "@/components/QuoteModal";
-import { BRAND, WHY_CHOOSE_US, KENYA_LOCATIONS } from "@/data/namtechData";
+import { BRAND, WHY_CHOOSE_US, KENYA_LOCATIONS } from "@/data/namitechData";
 import { Button } from "@/components/ui/button";
 
 export default function AboutPage() {
@@ -30,7 +30,7 @@ export default function AboutPage() {
         <section className="relative py-16 lg:py-24 bg-gradient-to-b from-slate-900 to-slate-950 border-b border-slate-800">
           <div className="container mx-auto text-center max-w-4xl space-y-4">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold">
-              About NamTech Kenya
+              About NamiTech Kenya
             </div>
             <h1 className="text-3xl sm:text-5xl font-extrabold text-white font-['Space_Grotesk'] tracking-tight">
               Connecting & Securing Kenyan Homes & Businesses
@@ -53,7 +53,7 @@ export default function AboutPage() {
                   Kenyan Practical Expertise Built for Local Realities
                 </h2>
                 <p className="text-slate-300 text-base leading-relaxed">
-                  Founded with a clear focus on overcoming common connectivity frustrations—such as poor WiFi coverage in concrete walls, tangled cables, and substandard surveillance cameras that fail in low light—NamTech brings structured engineering discipline to every installation.
+                  Founded with a clear focus on overcoming common connectivity frustrations—such as poor WiFi coverage in concrete walls, tangled cables, and substandard surveillance cameras that fail in low light—NamiTech brings structured engineering discipline to every installation.
                 </p>
                 <p className="text-slate-300 text-base leading-relaxed">
                   Whether you are an estate homeowner in Nairobi needing flawless internet across multiple floors, or a logistics company in Mombasa requiring perimeter CCTV and central control, we supply tested hardware and neat workmanship.
@@ -75,7 +75,7 @@ export default function AboutPage() {
                 <div className="rounded-3xl overflow-hidden border border-cyan-500/30 shadow-2xl relative">
                   <img
                     src={BRAND.images.noc}
-                    alt="NamTech Kenya Operations and Monitoring Team"
+                    alt="NamiTech Kenya Operations and Monitoring Team"
                     className="w-full h-auto object-cover"
                   />
                   <div className="p-4 bg-slate-900/90 border-t border-slate-800">
@@ -93,7 +93,7 @@ export default function AboutPage() {
           <div className="container mx-auto">
             <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white font-['Space_Grotesk']">
-                What Sets NamTech Apart
+                What Sets NamiTech Apart
               </h2>
               <p className="text-slate-300 text-base">
                 Core standards that define our work on every Kenyan site.
@@ -147,7 +147,7 @@ export default function AboutPage() {
               Service Areas in Kenya
             </h2>
             <p className="text-slate-300 text-base">
-              NamTech field engineers are on standby for prompt site assessments in:
+              NamiTech field engineers are on standby for prompt site assessments in:
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-left">
               {KENYA_LOCATIONS.map((loc, i) => (

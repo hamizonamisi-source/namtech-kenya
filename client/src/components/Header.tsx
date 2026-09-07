@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Phone, MessageSquare, Menu, X, Shield, Wifi, ArrowRight } from "lucide-react";
-import { NamTechLogo } from "./NamTechLogo";
-import { BRAND } from "../data/namtechData";
+import { NamiTechLogo } from "./NamiTechLogo";
+import { BRAND } from "../data/namitechData";
 import { Button } from "@/components/ui/button";
 
 export const Header: React.FC<{ onOpenQuoteModal?: () => void }> = ({ onOpenQuoteModal }) => {
@@ -79,7 +79,7 @@ export const Header: React.FC<{ onOpenQuoteModal?: () => void }> = ({ onOpenQuot
       >
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
-          <NamTechLogo withTagline={false} size="md" />
+          <NamiTechLogo withTagline={false} size="md" />
 
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center gap-1 lg:gap-2">

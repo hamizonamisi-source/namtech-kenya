@@ -18,7 +18,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { QuoteModal, FloatingContactBar } from "@/components/QuoteModal";
 import { LeadForm } from "@/components/LeadForm";
-import { BRAND, SERVICES } from "@/data/namtechData";
+import { BRAND, SERVICES } from "@/data/namitechData";
 import { Button } from "@/components/ui/button";
 
 export default function ServicesPage() {

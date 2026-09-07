@@ -23,7 +23,7 @@ import { Footer } from "@/components/Footer";
 import { LeadForm } from "@/components/LeadForm";
 import { QuoteModal, FloatingContactBar } from "@/components/QuoteModal";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
-import { BRAND, SERVICES, WHY_CHOOSE_US, TESTIMONIALS, KENYA_LOCATIONS } from "@/data/namtechData";
+import { BRAND, SERVICES, WHY_CHOOSE_US, TESTIMONIALS, KENYA_LOCATIONS } from "@/data/namitechData";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -44,7 +44,7 @@ export default function Home() {
             1. HERO SECTION
             Exact prompt requirements:
             - Headline: Fast Internet & Advanced CCTV Installation in Kenya
-            - Subheadline: NamTech delivers high-speed networking, reliable home/office internet setups, and 24/7 security camera solutions.
+            - Subheadline: NamiTech delivers high-speed networking, reliable home/office internet setups, and 24/7 security camera solutions.
             - CTAs: [ Get a Free Quote ] (Links to Contact section) & [ Call Us: +254 738 735 545 ]
             - Attached Image Integration
            ======================================================== */}
@@ -73,7 +73,7 @@ export default function Home() {
 
                 {/* Subheadline */}
                 <p className="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                  NamTech delivers high-speed networking, reliable home/office internet setups, and 24/7 security camera solutions.
+                  NamiTech delivers high-speed networking, reliable home/office internet setups, and 24/7 security camera solutions.
                 </p>
 
                 {/* Call to Action Buttons */}
@@ -125,7 +125,7 @@ export default function Home() {
                   
                   <img
                     src={BRAND.images.hero}
-                    alt="NamTech Kenya - Internet Setup, Fiber Optic, and CCTV Installation"
+                    alt="NamiTech Kenya - Internet Setup, Fiber Optic, and CCTV Installation"
                     className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                     loading="eager"
                   />
@@ -352,7 +352,7 @@ export default function Home() {
         </section>
 
         {/* ========================================================
-            3. WHY CHOOSE NAMTECH?
+            3. WHY CHOOSE NAMITECH?
             Prompt Copy:
             - Local Expertise: Tailored networking and surveillance solutions built for Kenyan businesses and homes.
             - Fast Installation: Rapid deployment with neat, structured cabling and minimal downtime.
@@ -380,14 +380,14 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Right Column: Why Choose NamTech Pillars */}
+              {/* Right Column: Why Choose NamiTech Pillars */}
               <div className="lg:col-span-7 space-y-8">
                 <div>
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold mb-3">
-                    Why NamTech
+                    Why NamiTech
                   </div>
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-['Space_Grotesk'] tracking-tight">
-                    Why Choose NamTech Kenya?
+                    Why Choose NamiTech Kenya?
                   </h2>
                   <p className="text-slate-300 text-base mt-2">
                     We combine Kenyan local field experience with enterprise-grade networking equipment to ensure you stay constantly connected and protected.
@@ -462,7 +462,7 @@ export default function Home() {
                 Trusted Across Kenyan Communities
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white font-['Space_Grotesk']">
-                What Kenyan Clients Say About NamTech
+                What Kenyan Clients Say About NamiTech
               </h2>
             </div>
 

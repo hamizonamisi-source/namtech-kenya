@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Calculator, ArrowRight, Check, Shield, Wifi, Server } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { BRAND } from "../data/namtechData";
+import { BRAND } from "../data/namitechData";
 
 export const QuoteCalculator: React.FC<{ onSelectPackage: (pkgDesc: string) => void }> = ({ onSelectPackage }) => {
   const [propertyType, setPropertyType] = useState<"residential" | "commercial" | "compound">("residential");

@@ -1,18 +1,18 @@
 export const BRAND = {
-  name: "NamTech",
-  legalName: "NamTech Kenya Ltd",
+  name: "NamiTech",
+  legalName: "NamiTech Kenya Ltd",
   tagline: "Connecting & Securing the Nation",
   phoneDisplay: "+254 738 735 545",
   phoneRaw: "+254738735545",
   phoneTel: "tel:+254738735545",
-  whatsappUrl: "https://wa.me/254738735545?text=Hello%20NamTech,%20I%20would%20like%20a%20free%20quote%20for%20Internet%20/%20CCTV%20installation%20in%20Kenya.",
+  whatsappUrl: "https://wa.me/254738735545?text=Hello%20NamiTech,%20I%20would%20like%20a%20free%20quote%20for%20Internet%20/%20CCTV%20installation%20in%20Kenya.",
   email: "hamizonamisi@gmail.com",
   location: "Kenya (Serving Nairobi, Mombasa, Kisumu, Nakuru, Eldoret & Nationwide)",
   headline: "Fast Internet & Advanced CCTV Installation in Kenya",
-  subheadline: "NamTech delivers high-speed networking, reliable home/office internet setups, and 24/7 security camera solutions.",
+  subheadline: "NamiTech delivers high-speed networking, reliable home/office internet setups, and 24/7 security camera solutions.",
   images: {
-    hero: "/assets/namtech-hero.jpg",
-    logoCropped: "/assets/namtech-logo-extracted.jpg",
+    hero: "/assets/namitech-hero.jpg",
+    logoCropped: "/assets/namitech-logo-extracted.jpg",
     rack: "/assets/service-networking-rack.jpg",
     cctv: "/assets/service-cctv-technician.jpg",
     noc: "/assets/operations-noc.jpg",
@@ -128,19 +128,19 @@ export const TESTIMONIALS = [
   {
     name: "Kennedy Mwangi",
     role: "Property Manager, Kilimani Apartments, Nairobi",
-    review: "NamTech installed 32 IP cameras and structured WiFi across all four wings of our residential complex. Their cabling is neat, and our tenants now enjoy seamless internet and 24/7 security.",
+    review: "NamiTech installed 32 IP cameras and structured WiFi across all four wings of our residential complex. Their cabling is neat, and our tenants now enjoy seamless internet and 24/7 security.",
     rating: 5
   },
   {
     name: "Beatrice Achieng",
     role: "Director, Apex Logistics Ltd, Mombasa",
-    review: "We had persistent WiFi dead-zones in our warehouse and unreliable cameras. NamTech re-engineered our LAN with mesh WiFi and fitted HD night-vision cameras. Highly recommended!",
+    review: "We had persistent WiFi dead-zones in our warehouse and unreliable cameras. NamiTech re-engineered our LAN with mesh WiFi and fitted HD night-vision cameras. Highly recommended!",
     rating: 5
   },
   {
     name: "Dr. Silas Omondi",
     role: "Medical Clinic Owner, Kisumu",
-    review: "The mobile view setup allows me to check our clinics even when I am traveling. Clean work, punctuality, and great customer care from the NamTech team.",
+    review: "The mobile view setup allows me to check our clinics even when I am traveling. Clean work, punctuality, and great customer care from the NamiTech team.",
     rating: 5
   }
 ];

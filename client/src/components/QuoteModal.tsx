@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { X, MessageSquare, Phone } from "lucide-react";
-import { BRAND } from "../data/namtechData";
+import { BRAND } from "../data/namitechData";
 import { LeadForm } from "./LeadForm";
 
 export const QuoteModal: React.FC<{ isOpen: boolean; onClose: () => void; initialService?: any }> = ({
@@ -20,7 +20,7 @@ export const QuoteModal: React.FC<{ isOpen: boolean; onClose: () => void; initia
               Request a Free Quote / Site Survey
             </h3>
             <p className="text-xs text-slate-400">
-              NamTech Kenya Technical Dispatch • Prompt response within 30 mins
+              NamiTech Kenya Technical Dispatch • Prompt response within 30 mins
             </p>
           </div>
           <button
@@ -64,7 +64,7 @@ export const FloatingContactBar: React.FC<{ onOpenQuote: () => void }> = ({ onOp
       {/* Direct Call float button */}
       <a
         href={BRAND.phoneTel}
-        aria-label="Call NamTech Kenya"
+        aria-label="Call NamiTech Kenya"
         className="group flex items-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white px-4 py-3 rounded-full shadow-2xl shadow-cyan-900/60 border border-cyan-400/40 transition-all duration-300 hover:scale-105 active:scale-95"
       >
         <Phone className="w-5 h-5" />

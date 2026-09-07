@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Send, CheckCircle2, Phone, Mail, MapPin, Loader2, MessageSquare } from "lucide-react";
-import { BRAND } from "../data/namtechData";
+import { BRAND } from "../data/namitechData";
 import { Button } from "@/components/ui/button";
 
 interface LeadFormProps {
@@ -37,7 +37,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onS
 
   const handleWhatsAppRedirect = () => {
     const text = encodeURIComponent(
-      `Hello NamTech Kenya,\nMy Name: ${formData.name || "Client"}\nPhone: ${formData.phone || "Not specified"}\nService Needed: ${formData.service}\nLocation in Kenya: ${formData.location}\nRequirement: ${formData.message || "I would like a free site assessment and quote."}`
+      `Hello NamiTech Kenya,\nMy Name: ${formData.name || "Client"}\nPhone: ${formData.phone || "Not specified"}\nService Needed: ${formData.service}\nLocation in Kenya: ${formData.location}\nRequirement: ${formData.message || "I would like a free site assessment and quote."}`
     );
     window.open(`https://wa.me/254738735545?text=${text}`, "_blank");
   };
