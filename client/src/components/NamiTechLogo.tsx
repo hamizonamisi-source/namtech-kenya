@@ -45,7 +45,7 @@ export const NamiTechLogo: React.FC<LogoProps> = ({ size = "md", withTagline = f
       <div className="flex flex-col">
         <div className="flex items-baseline leading-none">
           <span className={`${titleClass} font-extrabold tracking-tight text-white font-['Space_Grotesk']`}>
-            Nam<span className="text-cyan-400">Tech</span>
+            Nami<span className="text-cyan-400">Tech</span>
           </span>
           <span className="ml-1.5 text-xs font-bold uppercase tracking-widest px-1.5 py-0.5 rounded bg-cyan-950/80 border border-cyan-800 text-cyan-300">
             Kenya
