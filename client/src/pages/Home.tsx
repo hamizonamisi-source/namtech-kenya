@@ -1,29 +1,35 @@
 import React, { useState } from "react";
 import { Link } from "wouter";
-import { 
-  Wifi, 
-  ShieldAlert, 
-  Compass, 
-  Zap, 
-  Clock, 
-  Smartphone, 
-  ArrowRight, 
-  Phone, 
-  MessageSquare, 
-  CheckCircle2, 
-  Server, 
-  Eye, 
-  Check, 
-  Radio, 
+import {
+  Wifi,
+  ShieldAlert,
+  Compass,
+  Zap,
+  Clock,
+  Smartphone,
+  ArrowRight,
+  Phone,
+  MessageSquare,
+  CheckCircle2,
+  Server,
+  Eye,
+  Check,
+  Radio,
   ShieldCheck,
-  Cpu
+  Cpu,
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LeadForm } from "@/components/LeadForm";
 import { QuoteModal, FloatingContactBar } from "@/components/QuoteModal";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
-import { BRAND, SERVICES, WHY_CHOOSE_US, TESTIMONIALS, KENYA_LOCATIONS } from "@/data/namitechData";
+import {
+  BRAND,
+  SERVICES,
+  WHY_CHOOSE_US,
+  TESTIMONIALS,
+  KENYA_LOCATIONS,
+} from "@/data/namitechData";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -73,7 +79,8 @@ export default function Home() {
 
                 {/* Subheadline */}
                 <p className="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                  NamiTech delivers high-speed networking, reliable home/office internet setups, and 24/7 security camera solutions.
+                  NamiTech delivers high-speed networking, reliable home/office
+                  internet setups, and 24/7 security camera solutions.
                 </p>
 
                 {/* Call to Action Buttons */}
@@ -103,15 +110,21 @@ export default function Home() {
                 {/* Quick Trust Highlights */}
                 <div className="pt-4 grid grid-cols-3 gap-3 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0 text-left">
                   <div className="space-y-0.5">
-                    <p className="text-lg sm:text-xl font-bold text-white font-['Space_Grotesk']">24-48h</p>
+                    <p className="text-lg sm:text-xl font-bold text-white font-['Space_Grotesk']">
+                      24-48h
+                    </p>
                     <p className="text-xs text-slate-400">Fast Kenya Setup</p>
                   </div>
                   <div className="space-y-0.5">
-                    <p className="text-lg sm:text-xl font-bold text-white font-['Space_Grotesk']">100% HD</p>
+                    <p className="text-lg sm:text-xl font-bold text-white font-['Space_Grotesk']">
+                      100% HD
+                    </p>
                     <p className="text-xs text-slate-400">IP Remote View</p>
                   </div>
                   <div className="space-y-0.5">
-                    <p className="text-lg sm:text-xl font-bold text-white font-['Space_Grotesk']">24/7</p>
+                    <p className="text-lg sm:text-xl font-bold text-white font-['Space_Grotesk']">
+                      24/7
+                    </p>
                     <p className="text-xs text-slate-400">Local Tech Support</p>
                   </div>
                 </div>
@@ -122,7 +135,7 @@ export default function Home() {
                 <div className="relative rounded-3xl overflow-hidden border border-cyan-500/40 shadow-2xl shadow-cyan-950/60 group">
                   {/* Glowing frame */}
                   <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 via-transparent to-blue-500/20 pointer-events-none z-10" />
-                  
+
                   <img
                     src={BRAND.images.hero}
                     alt="NamiTech Kenya - Internet Setup, Fiber Optic, and CCTV Installation"
@@ -137,8 +150,12 @@ export default function Home() {
                         <Radio className="w-5 h-5 animate-pulse" />
                       </div>
                       <div>
-                        <p className="text-xs font-bold text-white">Live Monitoring & Fiber Active</p>
-                        <p className="text-[11px] text-cyan-300">Nairobi • Mombasa • Kisumu • Rift</p>
+                        <p className="text-xs font-bold text-white">
+                          Live Monitoring & Fiber Active
+                        </p>
+                        <p className="text-[11px] text-cyan-300">
+                          Nairobi • Mombasa • Kisumu • Rift
+                        </p>
                       </div>
                     </div>
                     <a
@@ -162,7 +179,10 @@ export default function Home() {
             - Internet & Networking Setup: High-speed internet deployment, fiber configuration, router setup, structured LAN/WAN cabling, and WiFi dead-zone elimination for homes and offices across Kenya.
             - CCTV & Security Solutions: Professional HD/IP CCTV camera installation, remote mobile view setup, maintenance, and smart security monitoring for residential and commercial properties.
            ======================================================== */}
-        <section id="services" className="py-20 bg-slate-900/40 border-y border-slate-800/80 relative">
+        <section
+          id="services"
+          className="py-20 bg-slate-900/40 border-y border-slate-800/80 relative"
+        >
           <div className="container mx-auto">
             {/* Section Heading */}
             <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -173,7 +193,8 @@ export default function Home() {
                 Specialized Internet & Security Services in Kenya
               </h2>
               <p className="text-base sm:text-lg text-slate-300">
-                Engineered for speed, durability, and absolute security across residential, commercial, and enterprise spaces.
+                Engineered for speed, durability, and absolute security across
+                residential, commercial, and enterprise spaces.
               </p>
             </div>
 
@@ -201,7 +222,9 @@ export default function Home() {
                       Internet & Networking Setup
                     </h3>
                     <p className="text-sm text-slate-300 leading-relaxed mt-3">
-                      High-speed internet deployment, fiber configuration, router setup, structured LAN/WAN cabling, and WiFi dead-zone elimination for homes and offices across Kenya.
+                      High-speed internet deployment, fiber configuration,
+                      router setup, structured LAN/WAN cabling, and WiFi
+                      dead-zone elimination for homes and offices across Kenya.
                     </p>
                   </div>
 
@@ -213,15 +236,21 @@ export default function Home() {
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                      <span>Whole-home & office Mesh WiFi setup (Zero dead zones)</span>
+                      <span>
+                        Whole-home & office Mesh WiFi setup (Zero dead zones)
+                      </span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                      <span>Cat6 structured cabling & patch panel neat dressing</span>
+                      <span>
+                        Cat6 structured cabling & patch panel neat dressing
+                      </span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                      <span>Bandwidth management & high-density guest WiFi portals</span>
+                      <span>
+                        Bandwidth management & high-density guest WiFi portals
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -233,7 +262,10 @@ export default function Home() {
                   >
                     Request Internet Quote
                   </Button>
-                  <Link href="/services#internet" className="px-4 py-2.5 rounded-xl border border-slate-700 hover:border-slate-500 text-slate-300 text-sm font-semibold flex items-center gap-1.5 transition-colors">
+                  <Link
+                    href="/services#internet"
+                    className="px-4 py-2.5 rounded-xl border border-slate-700 hover:border-slate-500 text-slate-300 text-sm font-semibold flex items-center gap-1.5 transition-colors"
+                  >
                     <span>Details</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -262,7 +294,9 @@ export default function Home() {
                       CCTV & Security Solutions
                     </h3>
                     <p className="text-sm text-slate-300 leading-relaxed mt-3">
-                      Professional HD/IP CCTV camera installation, remote mobile view setup, maintenance, and smart security monitoring for residential and commercial properties.
+                      Professional HD/IP CCTV camera installation, remote mobile
+                      view setup, maintenance, and smart security monitoring for
+                      residential and commercial properties.
                     </p>
                   </div>
 
@@ -270,19 +304,28 @@ export default function Home() {
                   <ul className="space-y-2 text-sm text-slate-300 pt-2 border-t border-slate-800/80">
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                      <span>HD & 4K Ultra-clear cameras with color night-vision</span>
+                      <span>
+                        HD & 4K Ultra-clear cameras with color night-vision
+                      </span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                      <span>Instant live viewing on iOS, Android smartphone & laptop</span>
+                      <span>
+                        Instant live viewing on iOS, Android smartphone & laptop
+                      </span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                      <span>Motion detection, perimeter alerts & intruder notifications</span>
+                      <span>
+                        Motion detection, perimeter alerts & intruder
+                        notifications
+                      </span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                      <span>NVR/DVR recording, backup power & preventive maintenance</span>
+                      <span>
+                        NVR/DVR recording, backup power & preventive maintenance
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -294,7 +337,10 @@ export default function Home() {
                   >
                     Request CCTV Quote
                   </Button>
-                  <Link href="/services#cctv" className="px-4 py-2.5 rounded-xl border border-slate-700 hover:border-slate-500 text-slate-300 text-sm font-semibold flex items-center gap-1.5 transition-colors">
+                  <Link
+                    href="/services#cctv"
+                    className="px-4 py-2.5 rounded-xl border border-slate-700 hover:border-slate-500 text-slate-300 text-sm font-semibold flex items-center gap-1.5 transition-colors"
+                  >
                     <span>Details</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -309,8 +355,13 @@ export default function Home() {
                   <Server className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="text-base font-bold text-white font-['Space_Grotesk']">Structured Cabling Kenya</h4>
-                  <p className="text-xs text-slate-400 mt-1">Organized Cat6/Cat6A patch cabling, server racks, and network trunking.</p>
+                  <h4 className="text-base font-bold text-white font-['Space_Grotesk']">
+                    Structured Cabling Kenya
+                  </h4>
+                  <p className="text-xs text-slate-400 mt-1">
+                    Organized Cat6/Cat6A patch cabling, server racks, and
+                    network trunking.
+                  </p>
                 </div>
               </div>
 
@@ -319,8 +370,13 @@ export default function Home() {
                   <ShieldCheck className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="text-base font-bold text-white font-['Space_Grotesk']">Biometric Access & Intercom</h4>
-                  <p className="text-xs text-slate-400 mt-1">Smart door access controllers, RFID cards, and video gate entry phones.</p>
+                  <h4 className="text-base font-bold text-white font-['Space_Grotesk']">
+                    Biometric Access & Intercom
+                  </h4>
+                  <p className="text-xs text-slate-400 mt-1">
+                    Smart door access controllers, RFID cards, and video gate
+                    entry phones.
+                  </p>
                 </div>
               </div>
 
@@ -329,8 +385,13 @@ export default function Home() {
                   <Cpu className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="text-base font-bold text-white font-['Space_Grotesk']">WiFi Dead-Zone Elimination</h4>
-                  <p className="text-xs text-slate-400 mt-1">Seamless roaming mesh setups for multi-story villas, offices & compounds.</p>
+                  <h4 className="text-base font-bold text-white font-['Space_Grotesk']">
+                    WiFi Dead-Zone Elimination
+                  </h4>
+                  <p className="text-xs text-slate-400 mt-1">
+                    Seamless roaming mesh setups for multi-story villas, offices
+                    & compounds.
+                  </p>
                 </div>
               </div>
             </div>
@@ -343,7 +404,7 @@ export default function Home() {
         <section className="py-20 bg-slate-950 relative overflow-hidden">
           <div className="container mx-auto">
             <QuoteCalculator
-              onSelectPackage={(pkg) => {
+              onSelectPackage={pkg => {
                 setSelectedService(pkg);
                 setQuoteModalOpen(true);
               }}
@@ -374,7 +435,8 @@ export default function Home() {
                       Nationwide Deployment
                     </p>
                     <p className="text-sm font-semibold text-white">
-                      Connecting & Securing Nairobi, Mombasa, Kisumu, Nakuru & Beyond
+                      Connecting & Securing Nairobi, Mombasa, Kisumu, Nakuru &
+                      Beyond
                     </p>
                   </div>
                 </div>
@@ -390,7 +452,9 @@ export default function Home() {
                     Why Choose NamiTech Kenya?
                   </h2>
                   <p className="text-slate-300 text-base mt-2">
-                    We combine Kenyan local field experience with enterprise-grade networking equipment to ensure you stay constantly connected and protected.
+                    We combine Kenyan local field experience with
+                    enterprise-grade networking equipment to ensure you stay
+                    constantly connected and protected.
                   </p>
                 </div>
 
@@ -404,7 +468,8 @@ export default function Home() {
                       Local Expertise
                     </h3>
                     <p className="text-sm text-slate-300 leading-relaxed">
-                      Tailored networking and surveillance solutions built for Kenyan businesses and homes.
+                      Tailored networking and surveillance solutions built for
+                      Kenyan businesses and homes.
                     </p>
                   </div>
 
@@ -417,7 +482,8 @@ export default function Home() {
                       Fast Installation
                     </h3>
                     <p className="text-sm text-slate-300 leading-relaxed">
-                      Rapid deployment with neat, structured cabling and minimal downtime.
+                      Rapid deployment with neat, structured cabling and minimal
+                      downtime.
                     </p>
                   </div>
 
@@ -443,7 +509,8 @@ export default function Home() {
                       Mobile Remote View
                     </h3>
                     <p className="text-sm text-slate-300 leading-relaxed">
-                      Stream your security feeds live to your phone anywhere in the world.
+                      Stream your security feeds live to your phone anywhere in
+                      the world.
                     </p>
                   </div>
                 </div>
@@ -494,7 +561,10 @@ export default function Home() {
             - Location: Kenya
             - Form Fields: Name | Phone Number | Service Needed (Internet / CCTV / Both) | Message
            ======================================================== */}
-        <section id="contact" className="py-20 bg-gradient-to-b from-slate-900/80 to-slate-950 border-t border-slate-800 relative">
+        <section
+          id="contact"
+          className="py-20 bg-gradient-to-b from-slate-900/80 to-slate-950 border-t border-slate-800 relative"
+        >
           <div className="container mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
               {/* Left Column: Direct Contacts */}
@@ -506,7 +576,9 @@ export default function Home() {
                   Ready to Upgrade Your Connection or Secure Your Property?
                 </h2>
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                  Speak directly with a certified technician. We provide free site inspections and quotations across Nairobi, Mombasa, Kisumu, Nakuru, and countrywide.
+                  Speak directly with a certified technician. We provide free
+                  site inspections and quotations across Nairobi, Mombasa,
+                  Kisumu, Nakuru, and countrywide.
                 </p>
 
                 {/* Direct info cards */}
@@ -521,7 +593,9 @@ export default function Home() {
                       <MessageSquare className="w-5 h-5" />
                     </div>
                     <div>
-                      <p className="text-xs text-slate-400 font-semibold">Phone / WhatsApp</p>
+                      <p className="text-xs text-slate-400 font-semibold">
+                        Phone / WhatsApp
+                      </p>
                       <p className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors">
                         {BRAND.phoneDisplay}
                       </p>
@@ -536,7 +610,9 @@ export default function Home() {
                       <Clock className="w-5 h-5" />
                     </div>
                     <div>
-                      <p className="text-xs text-slate-400 font-semibold">Email Address</p>
+                      <p className="text-xs text-slate-400 font-semibold">
+                        Email Address
+                      </p>
                       <p className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors break-all">
                         {BRAND.email}
                       </p>
@@ -548,8 +624,12 @@ export default function Home() {
                       <Compass className="w-5 h-5" />
                     </div>
                     <div>
-                      <p className="text-xs text-slate-400 font-semibold">Primary Location</p>
-                      <p className="text-base font-bold text-white">Kenya (Nationwide Coverage)</p>
+                      <p className="text-xs text-slate-400 font-semibold">
+                        Primary Location
+                      </p>
+                      <p className="text-base font-bold text-white">
+                        Kenya (Nationwide Coverage)
+                      </p>
                     </div>
                   </div>
                 </div>

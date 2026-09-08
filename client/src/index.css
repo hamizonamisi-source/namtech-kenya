@@ -27,8 +27,8 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --font-display: 'Space Grotesk', system-ui, sans-serif;
-  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
 :root {
@@ -43,11 +43,11 @@
   --primary-foreground: oklch(0.12 0.02 245);
   --secondary: oklch(0.22 0.03 245);
   --secondary-foreground: oklch(0.92 0.01 240);
-  --muted: oklch(0.20 0.02 245);
+  --muted: oklch(0.2 0.02 245);
   --muted-foreground: oklch(0.68 0.02 240);
   --accent: oklch(0.25 0.04 230);
   --accent-foreground: oklch(0.98 0.01 240);
-  --destructive: oklch(0.60 0.22 25);
+  --destructive: oklch(0.6 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
   --border: oklch(0.28 0.03 240);
   --input: oklch(0.25 0.03 240);
@@ -60,17 +60,30 @@
   }
   html {
     scroll-behavior: smooth;
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
   }
   body {
     @apply bg-background text-foreground;
-    background-image: 
-      radial-gradient(circle at 15% 15%, rgba(14, 165, 233, 0.08) 0%, transparent 40%),
-      radial-gradient(circle at 85% 85%, rgba(59, 130, 246, 0.06) 0%, transparent 40%);
+    background-image:
+      radial-gradient(
+        circle at 15% 15%,
+        rgba(14, 165, 233, 0.08) 0%,
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at 85% 85%,
+        rgba(59, 130, 246, 0.06) 0%,
+        transparent 40%
+      );
     background-attachment: fixed;
   }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', system-ui, sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Space Grotesk", system-ui, sans-serif;
     letter-spacing: -0.02em;
   }
   button:not(:disabled),
@@ -121,6 +134,8 @@
 
   .tech-border-glow {
     border-color: rgba(56, 189, 248, 0.35);
-    box-shadow: inset 0 0 15px rgba(14, 165, 233, 0.1), 0 0 20px rgba(14, 165, 233, 0.15);
+    box-shadow:
+      inset 0 0 15px rgba(14, 165, 233, 0.1),
+      0 0 20px rgba(14, 165, 233, 0.15);
   }
 }

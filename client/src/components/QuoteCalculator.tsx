@@ -1,10 +1,21 @@
 import React, { useState } from "react";
-import { Calculator, ArrowRight, Check, Shield, Wifi, Server } from "lucide-react";
+import {
+  Calculator,
+  ArrowRight,
+  Check,
+  Shield,
+  Wifi,
+  Server,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BRAND } from "../data/namitechData";
 
-export const QuoteCalculator: React.FC<{ onSelectPackage: (pkgDesc: string) => void }> = ({ onSelectPackage }) => {
-  const [propertyType, setPropertyType] = useState<"residential" | "commercial" | "compound">("residential");
+export const QuoteCalculator: React.FC<{
+  onSelectPackage: (pkgDesc: string) => void;
+}> = ({ onSelectPackage }) => {
+  const [propertyType, setPropertyType] = useState<
+    "residential" | "commercial" | "compound"
+  >("residential");
   const [needsInternet, setNeedsInternet] = useState(true);
   const [needsCctv, setNeedsCctv] = useState(true);
   const [cctvCameras, setCctvCameras] = useState(4);
@@ -14,7 +25,12 @@ export const QuoteCalculator: React.FC<{ onSelectPackage: (pkgDesc: string) => v
   const calculateEstimate = () => {
     let base = 0;
     if (needsInternet) {
-      base += propertyType === "residential" ? 7500 : propertyType === "commercial" ? 18000 : 25000;
+      base +=
+        propertyType === "residential"
+          ? 7500
+          : propertyType === "commercial"
+            ? 18000
+            : 25000;
       base += (wifiPoints - 1) * 4500; // Extra mesh node / AP
     }
     if (needsCctv) {
@@ -43,7 +59,8 @@ export const QuoteCalculator: React.FC<{ onSelectPackage: (pkgDesc: string) => v
             Instant Kenyan Installation Cost Estimator
           </h3>
           <p className="text-xs sm:text-sm text-slate-400">
-            Customize your property requirements for immediate budget transparency (KES).
+            Customize your property requirements for immediate budget
+            transparency (KES).
           </p>
         </div>
       </div>
@@ -61,7 +78,7 @@ export const QuoteCalculator: React.FC<{ onSelectPackage: (pkgDesc: string) => v
                 { id: "residential", label: "Home / Apartment" },
                 { id: "commercial", label: "Business / Office" },
                 { id: "compound", label: "Estate / Warehouse" },
-              ].map((item) => (
+              ].map(item => (
                 <button
                   key={item.id}
                   type="button"
@@ -93,11 +110,19 @@ export const QuoteCalculator: React.FC<{ onSelectPackage: (pkgDesc: string) => v
                 }`}
               >
                 <div className="flex items-center gap-2.5">
-                  <Wifi className={`w-5 h-5 ${needsInternet ? "text-cyan-400" : "text-slate-500"}`} />
-                  <span className="text-sm font-semibold">Internet & WiFi Setup</span>
+                  <Wifi
+                    className={`w-5 h-5 ${needsInternet ? "text-cyan-400" : "text-slate-500"}`}
+                  />
+                  <span className="text-sm font-semibold">
+                    Internet & WiFi Setup
+                  </span>
                 </div>
-                <div className={`w-5 h-5 rounded-md flex items-center justify-center border ${needsInternet ? "bg-cyan-500 border-cyan-400 text-slate-950" : "border-slate-700"}`}>
-                  {needsInternet && <Check className="w-3.5 h-3.5 stroke-[3]" />}
+                <div
+                  className={`w-5 h-5 rounded-md flex items-center justify-center border ${needsInternet ? "bg-cyan-500 border-cyan-400 text-slate-950" : "border-slate-700"}`}
+                >
+                  {needsInternet && (
+                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  )}
                 </div>
               </label>
 
@@ -110,10 +135,16 @@ export const QuoteCalculator: React.FC<{ onSelectPackage: (pkgDesc: string) => v
                 }`}
               >
                 <div className="flex items-center gap-2.5">
-                  <Shield className={`w-5 h-5 ${needsCctv ? "text-cyan-400" : "text-slate-500"}`} />
-                  <span className="text-sm font-semibold">CCTV & Surveillance</span>
+                  <Shield
+                    className={`w-5 h-5 ${needsCctv ? "text-cyan-400" : "text-slate-500"}`}
+                  />
+                  <span className="text-sm font-semibold">
+                    CCTV & Surveillance
+                  </span>
                 </div>
-                <div className={`w-5 h-5 rounded-md flex items-center justify-center border ${needsCctv ? "bg-cyan-500 border-cyan-400 text-slate-950" : "border-slate-700"}`}>
+                <div
+                  className={`w-5 h-5 rounded-md flex items-center justify-center border ${needsCctv ? "bg-cyan-500 border-cyan-400 text-slate-950" : "border-slate-700"}`}
+                >
                   {needsCctv && <Check className="w-3.5 h-3.5 stroke-[3]" />}
                 </div>
               </label>
@@ -125,8 +156,12 @@ export const QuoteCalculator: React.FC<{ onSelectPackage: (pkgDesc: string) => v
             {needsCctv && (
               <div className="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-xs font-semibold text-slate-300">CCTV Cameras:</span>
-                  <span className="text-cyan-400 font-bold text-base">{cctvCameras} Cameras</span>
+                  <span className="text-xs font-semibold text-slate-300">
+                    CCTV Cameras:
+                  </span>
+                  <span className="text-cyan-400 font-bold text-base">
+                    {cctvCameras} Cameras
+                  </span>
                 </div>
                 <input
                   type="range"
@@ -134,28 +169,36 @@ export const QuoteCalculator: React.FC<{ onSelectPackage: (pkgDesc: string) => v
                   max="16"
                   step="2"
                   value={cctvCameras}
-                  onChange={(e) => setCctvCameras(Number(e.target.value))}
+                  onChange={e => setCctvCameras(Number(e.target.value))}
                   className="w-full accent-cyan-400 bg-slate-800 rounded-lg cursor-pointer"
                 />
-                <span className="text-[11px] text-slate-500 mt-1 block">HD / IP with Night Vision + Mobile App</span>
+                <span className="text-[11px] text-slate-500 mt-1 block">
+                  HD / IP with Night Vision + Mobile App
+                </span>
               </div>
             )}
 
             {needsInternet && (
               <div className="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-xs font-semibold text-slate-300">WiFi Access Points:</span>
-                  <span className="text-cyan-400 font-bold text-base">{wifiPoints} APs / Mesh</span>
+                  <span className="text-xs font-semibold text-slate-300">
+                    WiFi Access Points:
+                  </span>
+                  <span className="text-cyan-400 font-bold text-base">
+                    {wifiPoints} APs / Mesh
+                  </span>
                 </div>
                 <input
                   type="range"
                   min="1"
                   max="8"
                   value={wifiPoints}
-                  onChange={(e) => setWifiPoints(Number(e.target.value))}
+                  onChange={e => setWifiPoints(Number(e.target.value))}
                   className="w-full accent-cyan-400 bg-slate-800 rounded-lg cursor-pointer"
                 />
-                <span className="text-[11px] text-slate-500 mt-1 block">Full coverage, zero dead-zones</span>
+                <span className="text-[11px] text-slate-500 mt-1 block">
+                  Full coverage, zero dead-zones
+                </span>
               </div>
             )}
           </div>
@@ -170,12 +213,15 @@ export const QuoteCalculator: React.FC<{ onSelectPackage: (pkgDesc: string) => v
             <div className="flex items-baseline gap-2">
               <span className="text-xs text-slate-400 font-medium">KES</span>
               <span className="text-3xl sm:text-4xl font-extrabold text-white font-['Space_Grotesk']">
-                {estimatedKES > 0 ? estimatedKES.toLocaleString() : "Contact Us"}
+                {estimatedKES > 0
+                  ? estimatedKES.toLocaleString()
+                  : "Contact Us"}
               </span>
             </div>
 
             <p className="text-xs text-slate-400 leading-relaxed">
-              Includes certified hardware, Cat6 cabling, professional mounting, NVR/router setup, and mobile view testing.
+              Includes certified hardware, Cat6 cabling, professional mounting,
+              NVR/router setup, and mobile view testing.
             </p>
 
             <ul className="text-xs space-y-1.5 text-slate-300 pt-2 border-t border-slate-800/80">

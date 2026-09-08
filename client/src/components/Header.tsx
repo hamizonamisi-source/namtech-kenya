@@ -1,11 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Phone, MessageSquare, Menu, X, Shield, Wifi, ArrowRight } from "lucide-react";
+import {
+  Phone,
+  MessageSquare,
+  Menu,
+  X,
+  Shield,
+  Wifi,
+  ArrowRight,
+} from "lucide-react";
 import { NamiTechLogo } from "./NamiTechLogo";
 import { BRAND } from "../data/namitechData";
 import { Button } from "@/components/ui/button";
 
-export const Header: React.FC<{ onOpenQuoteModal?: () => void }> = ({ onOpenQuoteModal }) => {
+export const Header: React.FC<{ onOpenQuoteModal?: () => void }> = ({
+  onOpenQuoteModal,
+}) => {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -83,7 +93,7 @@ export const Header: React.FC<{ onOpenQuoteModal?: () => void }> = ({ onOpenQuot
 
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center gap-1 lg:gap-2">
-            {navLinks.map((link) => {
+            {navLinks.map(link => {
               const active = isActive(link.href);
               return (
                 <Link
@@ -136,7 +146,11 @@ export const Header: React.FC<{ onOpenQuoteModal?: () => void }> = ({ onOpenQuot
               className="p-2 rounded-lg border border-slate-700 bg-slate-900 text-slate-200 hover:text-white focus:outline-none"
               aria-label="Toggle navigation menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -145,7 +159,7 @@ export const Header: React.FC<{ onOpenQuoteModal?: () => void }> = ({ onOpenQuot
         {mobileMenuOpen && (
           <div className="md:hidden bg-slate-950/98 border-b border-cyan-500/30 px-4 pt-3 pb-6 mt-3 space-y-3 animate-in slide-in-from-top duration-200">
             <nav className="flex flex-col space-y-1">
-              {navLinks.map((link) => {
+              {navLinks.map(link => {
                 const active = isActive(link.href);
                 return (
                   <Link

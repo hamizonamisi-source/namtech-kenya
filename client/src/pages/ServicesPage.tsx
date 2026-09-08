@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "wouter";
-import { 
-  Wifi, 
-  ShieldAlert, 
-  Server, 
-  Check, 
-  ArrowRight, 
-  Phone, 
-  MessageSquare, 
-  Laptop, 
-  Radio, 
-  ShieldCheck, 
-  Cpu, 
-  HardDrive 
+import {
+  Wifi,
+  ShieldAlert,
+  Server,
+  Check,
+  ArrowRight,
+  Phone,
+  MessageSquare,
+  Laptop,
+  Radio,
+  ShieldCheck,
+  Cpu,
+  HardDrive,
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -45,7 +45,9 @@ export default function ServicesPage() {
               Our Professional ICT & Surveillance Services
             </h1>
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-              From high-speed fiber internet and mesh WiFi setups to enterprise Cat6 structured cabling and 24/7 smart IP CCTV surveillance across Kenya.
+              From high-speed fiber internet and mesh WiFi setups to enterprise
+              Cat6 structured cabling and 24/7 smart IP CCTV surveillance across
+              Kenya.
             </p>
           </div>
         </section>
@@ -54,7 +56,10 @@ export default function ServicesPage() {
         <section className="py-20">
           <div className="container mx-auto space-y-24">
             {/* Service 1: Internet & Networking */}
-            <div id="internet" className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div
+              id="internet"
+              className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+            >
               <div className="lg:col-span-6 space-y-6">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-400/30 text-cyan-400 text-xs font-bold">
                   <Wifi className="w-3.5 h-3.5" />
@@ -64,7 +69,9 @@ export default function ServicesPage() {
                   Internet & Networking Setup in Kenya
                 </h2>
                 <p className="text-slate-300 leading-relaxed text-base">
-                  High-speed internet deployment, fiber configuration, router setup, structured LAN/WAN cabling, and WiFi dead-zone elimination for homes and offices across Kenya.
+                  High-speed internet deployment, fiber configuration, router
+                  setup, structured LAN/WAN cabling, and WiFi dead-zone
+                  elimination for homes and offices across Kenya.
                 </p>
 
                 <div className="space-y-3 pt-2">
@@ -127,14 +134,19 @@ export default function ServicesPage() {
                   />
                   <div className="p-4 bg-slate-900/90 border-t border-slate-800 text-xs text-slate-300 flex justify-between items-center">
                     <span>Neat Server Rack & Router Setup</span>
-                    <span className="text-cyan-400 font-bold">Fluke Certified</span>
+                    <span className="text-cyan-400 font-bold">
+                      Fluke Certified
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Service 2: CCTV & Security Solutions */}
-            <div id="cctv" className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div
+              id="cctv"
+              className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+            >
               <div className="lg:col-span-6 order-2 lg:order-1">
                 <div className="rounded-3xl overflow-hidden border border-cyan-500/30 shadow-2xl relative">
                   <img
@@ -144,7 +156,9 @@ export default function ServicesPage() {
                   />
                   <div className="p-4 bg-slate-900/90 border-t border-slate-800 text-xs text-slate-300 flex justify-between items-center">
                     <span>HD & IP Camera Installation</span>
-                    <span className="text-cyan-400 font-bold">24/7 Mobile View</span>
+                    <span className="text-cyan-400 font-bold">
+                      24/7 Mobile View
+                    </span>
                   </div>
                 </div>
               </div>
@@ -158,7 +172,9 @@ export default function ServicesPage() {
                   CCTV & Smart Security Solutions
                 </h2>
                 <p className="text-slate-300 leading-relaxed text-base">
-                  Professional HD/IP CCTV camera installation, remote mobile view setup, maintenance, and smart security monitoring for residential and commercial properties.
+                  Professional HD/IP CCTV camera installation, remote mobile
+                  view setup, maintenance, and smart security monitoring for
+                  residential and commercial properties.
                 </p>
 
                 <div className="space-y-3 pt-2">
@@ -215,7 +231,10 @@ export default function ServicesPage() {
 
             {/* Service 3 & 4: Structured Cabling & Access Control */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
-              <div id="cabling" className="p-8 rounded-3xl bg-slate-900/80 border border-slate-800 space-y-4">
+              <div
+                id="cabling"
+                className="p-8 rounded-3xl bg-slate-900/80 border border-slate-800 space-y-4"
+              >
                 <div className="p-3 w-fit rounded-xl bg-cyan-500/10 text-cyan-400">
                   <Server className="w-6 h-6" />
                 </div>
@@ -223,7 +242,9 @@ export default function ServicesPage() {
                   Structured Cabling & Server Racks
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed">
-                  Avoid cable clutter and network bottlenecks. We design and install standardized Cat6 cabling, patch panels, cable trays, and rack cabinets with labeled points and continuous testing.
+                  Avoid cable clutter and network bottlenecks. We design and
+                  install standardized Cat6 cabling, patch panels, cable trays,
+                  and rack cabinets with labeled points and continuous testing.
                 </p>
                 <ul className="space-y-1.5 text-xs text-slate-400 pt-2">
                   <li className="flex items-center gap-2">
@@ -232,12 +253,17 @@ export default function ServicesPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-3.5 h-3.5 text-cyan-400" />
-                    <span>Wall trunking and floor conduits for neat aesthetics</span>
+                    <span>
+                      Wall trunking and floor conduits for neat aesthetics
+                    </span>
                   </li>
                 </ul>
               </div>
 
-              <div id="access" className="p-8 rounded-3xl bg-slate-900/80 border border-slate-800 space-y-4">
+              <div
+                id="access"
+                className="p-8 rounded-3xl bg-slate-900/80 border border-slate-800 space-y-4"
+              >
                 <div className="p-3 w-fit rounded-xl bg-blue-500/10 text-blue-400">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
@@ -245,7 +271,9 @@ export default function ServicesPage() {
                   Access Control & Video Intercom
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed">
-                  Upgrade your premises with keyless biometric door entry, smart video doorbells, employee time-and-attendance logs, and automated gate locks.
+                  Upgrade your premises with keyless biometric door entry, smart
+                  video doorbells, employee time-and-attendance logs, and
+                  automated gate locks.
                 </p>
                 <ul className="space-y-1.5 text-xs text-slate-400 pt-2">
                   <li className="flex items-center gap-2">
@@ -254,7 +282,9 @@ export default function ServicesPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-3.5 h-3.5 text-cyan-400" />
-                    <span>Video gate station with smartphone call notifications</span>
+                    <span>
+                      Video gate station with smartphone call notifications
+                    </span>
                   </li>
                 </ul>
               </div>
