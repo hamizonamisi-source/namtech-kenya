@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  MessageSquare, 
-  Clock, 
-  ShieldCheck, 
-  CheckCircle2, 
-  Send 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  MessageSquare,
+  Clock,
+  ShieldCheck,
+  CheckCircle2,
+  Send,
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -34,7 +34,8 @@ export default function ContactPage() {
               Contact NamiTech Kenya
             </h1>
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-              Ready to upgrade your internet connection or secure your property? Reach our technicians directly or request an on-site survey.
+              Ready to upgrade your internet connection or secure your property?
+              Reach our technicians directly or request an on-site survey.
             </p>
           </div>
         </section>
@@ -50,7 +51,9 @@ export default function ContactPage() {
                     Get In Touch Directly
                   </h2>
                   <p className="text-sm text-slate-400 mt-1">
-                    Choose the fastest channel that suits you. We answer calls and WhatsApp inquiries immediately during business hours and provide 24/7 technical emergency assistance.
+                    Choose the fastest channel that suits you. We answer calls
+                    and WhatsApp inquiries immediately during business hours and
+                    provide 24/7 technical emergency assistance.
                   </p>
                 </div>
 
@@ -64,11 +67,15 @@ export default function ContactPage() {
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
-                      <p className="text-xs text-slate-400 font-semibold uppercase tracking-wider">Phone Call</p>
+                      <p className="text-xs text-slate-400 font-semibold uppercase tracking-wider">
+                        Phone Call
+                      </p>
                       <p className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">
                         {BRAND.phoneDisplay}
                       </p>
-                      <p className="text-xs text-slate-400 mt-0.5">Direct line to Kenyan technician dispatch</p>
+                      <p className="text-xs text-slate-400 mt-0.5">
+                        Direct line to Kenyan technician dispatch
+                      </p>
                     </div>
                   </a>
 
@@ -83,11 +90,16 @@ export default function ContactPage() {
                       <MessageSquare className="w-5 h-5" />
                     </div>
                     <div>
-                      <p className="text-xs text-emerald-400 font-semibold uppercase tracking-wider">WhatsApp Instant Chat</p>
+                      <p className="text-xs text-emerald-400 font-semibold uppercase tracking-wider">
+                        WhatsApp Instant Chat
+                      </p>
                       <p className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">
                         {BRAND.phoneDisplay}
                       </p>
-                      <p className="text-xs text-slate-400 mt-0.5">Send photos of your building or router for immediate advice</p>
+                      <p className="text-xs text-slate-400 mt-0.5">
+                        Send photos of your building or router for immediate
+                        advice
+                      </p>
                     </div>
                   </a>
 
@@ -100,11 +112,15 @@ export default function ContactPage() {
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
-                      <p className="text-xs text-slate-400 font-semibold uppercase tracking-wider">Official Email</p>
+                      <p className="text-xs text-slate-400 font-semibold uppercase tracking-wider">
+                        Official Email
+                      </p>
                       <p className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors break-all">
                         {BRAND.email}
                       </p>
-                      <p className="text-xs text-slate-400 mt-0.5">For tenders, corporate inquiries & formal quotations</p>
+                      <p className="text-xs text-slate-400 mt-0.5">
+                        For tenders, corporate inquiries & formal quotations
+                      </p>
                     </div>
                   </a>
 
@@ -114,9 +130,16 @@ export default function ContactPage() {
                       <MapPin className="w-5 h-5" />
                     </div>
                     <div>
-                      <p className="text-xs text-slate-400 font-semibold uppercase tracking-wider">Service Coverage</p>
-                      <p className="text-base font-bold text-white">Kenya (All 47 Counties Supported)</p>
-                      <p className="text-xs text-slate-400 mt-0.5">Primary hubs: Nairobi, Kiambu, Mombasa, Kisumu, Nakuru, Eldoret</p>
+                      <p className="text-xs text-slate-400 font-semibold uppercase tracking-wider">
+                        Service Coverage
+                      </p>
+                      <p className="text-base font-bold text-white">
+                        Kenya (All 47 Counties Supported)
+                      </p>
+                      <p className="text-xs text-slate-400 mt-0.5">
+                        Primary hubs: Nairobi, Kiambu, Mombasa, Kisumu, Nakuru,
+                        Eldoret
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -124,10 +147,7 @@ export default function ContactPage() {
 
               {/* Right Column: Lead Form */}
               <div className="lg:col-span-7">
-                <LeadForm
-                  initialService="Both"
-                  onSuccess={() => {}}
-                />
+                <LeadForm initialService="Both" onSuccess={() => {}} />
               </div>
             </div>
           </div>

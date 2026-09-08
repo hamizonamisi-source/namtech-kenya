@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import { Analytics } from "@vercel/analytics/react";
 
 function Router() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <Router />
+          <Analytics />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

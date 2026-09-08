@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { Send, CheckCircle2, Phone, Mail, MapPin, Loader2, MessageSquare } from "lucide-react";
+import {
+  Send,
+  CheckCircle2,
+  Phone,
+  Mail,
+  MapPin,
+  Loader2,
+  MessageSquare,
+} from "lucide-react";
 import { BRAND } from "../data/namitechData";
 import { Button } from "@/components/ui/button";
 
@@ -9,13 +17,17 @@ interface LeadFormProps {
   compact?: boolean;
 }
 
-export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onSuccess, compact = false }) => {
+export const LeadForm: React.FC<LeadFormProps> = ({
+  initialService = "Both",
+  onSuccess,
+  compact = false,
+}) => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     service: initialService || "Both",
     location: "Nairobi",
-    message: ""
+    message: "",
   });
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -23,7 +35,9 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onS
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.phone) {
-      alert("Please provide your name and phone number so our technical team can reach you.");
+      alert(
+        "Please provide your name and phone number so our technical team can reach you."
+      );
       return;
     }
 
@@ -52,10 +66,19 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onS
           Quote Request Received!
         </h3>
         <p className="text-slate-300 text-sm max-w-md mx-auto">
-          Thank you, <span className="font-semibold text-cyan-300">{formData.name}</span>. Our lead technician will review your request for{" "}
-          <span className="font-semibold text-cyan-300">{formData.service}</span> in{" "}
-          <span className="font-semibold text-cyan-300">{formData.location}</span> and call you at{" "}
-          <span className="font-semibold text-cyan-300">{formData.phone}</span> within 30 minutes.
+          Thank you,{" "}
+          <span className="font-semibold text-cyan-300">{formData.name}</span>.
+          Our lead technician will review your request for{" "}
+          <span className="font-semibold text-cyan-300">
+            {formData.service}
+          </span>{" "}
+          in{" "}
+          <span className="font-semibold text-cyan-300">
+            {formData.location}
+          </span>{" "}
+          and call you at{" "}
+          <span className="font-semibold text-cyan-300">{formData.phone}</span>{" "}
+          within 30 minutes.
         </p>
 
         <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -70,7 +93,13 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onS
             variant="outline"
             onClick={() => {
               setSubmitted(false);
-              setFormData({ name: "", phone: "", service: "Both", location: "Nairobi", message: "" });
+              setFormData({
+                name: "",
+                phone: "",
+                service: "Both",
+                location: "Nairobi",
+                message: "",
+              });
             }}
             className="border-slate-700 text-slate-300 hover:text-white"
           >
@@ -82,7 +111,10 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onS
   }
 
   return (
-    <form onSubmit={handleSubmit} className={`space-y-4 ${compact ? "" : "p-6 sm:p-8 rounded-2xl bg-slate-900/80 border border-cyan-500/30 shadow-2xl backdrop-blur-xl"}`}>
+    <form
+      onSubmit={handleSubmit}
+      className={`space-y-4 ${compact ? "" : "p-6 sm:p-8 rounded-2xl bg-slate-900/80 border border-cyan-500/30 shadow-2xl backdrop-blur-xl"}`}
+    >
       {!compact && (
         <div className="border-b border-slate-800 pb-4 mb-2">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold mb-2">
@@ -93,7 +125,8 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onS
             Ready to Upgrade Your Connection or Secure Your Property?
           </h3>
           <p className="text-sm text-slate-400 mt-1">
-            Fill out this quick form or reach out directly on WhatsApp/Call for immediate dispatch.
+            Fill out this quick form or reach out directly on WhatsApp/Call for
+            immediate dispatch.
           </p>
         </div>
       )}
@@ -109,7 +142,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onS
             required
             placeholder="e.g. Samuel Karanja"
             value={formData.name}
-            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            onChange={e => setFormData({ ...formData, name: e.target.value })}
             className="w-full bg-slate-950/90 border border-slate-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 transition-colors"
           />
         </div>
@@ -124,7 +157,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onS
             required
             placeholder="e.g. +254 7XX XXX XXX"
             value={formData.phone}
-            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+            onChange={e => setFormData({ ...formData, phone: e.target.value })}
             className="w-full bg-slate-950/90 border border-slate-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 transition-colors"
           />
         </div>
@@ -138,13 +171,21 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onS
           </label>
           <select
             value={formData.service}
-            onChange={(e) => setFormData({ ...formData, service: e.target.value as any })}
+            onChange={e =>
+              setFormData({ ...formData, service: e.target.value as any })
+            }
             className="w-full bg-slate-950/90 border border-slate-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 rounded-lg px-4 py-2.5 text-sm text-white transition-colors"
           >
-            <option value="Internet">Internet & Networking Setup (Fiber/WiFi/LAN)</option>
-            <option value="CCTV">CCTV & Security Solutions (HD/IP Cameras)</option>
+            <option value="Internet">
+              Internet & Networking Setup (Fiber/WiFi/LAN)
+            </option>
+            <option value="CCTV">
+              CCTV & Security Solutions (HD/IP Cameras)
+            </option>
             <option value="Both">Both (Internet Setup + CCTV Security)</option>
-            <option value="Structured Cabling">Structured Cabling & Server Rack</option>
+            <option value="Structured Cabling">
+              Structured Cabling & Server Rack
+            </option>
           </select>
         </div>
 
@@ -157,7 +198,9 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onS
             type="text"
             placeholder="e.g. Nairobi (Kilimani / Westlands), Mombasa, Kisumu"
             value={formData.location}
-            onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+            onChange={e =>
+              setFormData({ ...formData, location: e.target.value })
+            }
             className="w-full bg-slate-950/90 border border-slate-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 transition-colors"
           />
         </div>
@@ -172,7 +215,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onS
           rows={3}
           placeholder="Tell us about your home, apartment, office, or compound (e.g. 4-bedroom house WiFi setup, 8-camera CCTV system, warehouse networking)..."
           value={formData.message}
-          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+          onChange={e => setFormData({ ...formData, message: e.target.value })}
           className="w-full bg-slate-950/90 border border-slate-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 transition-colors resize-none"
         ></textarea>
       </div>
@@ -208,7 +251,8 @@ export const LeadForm: React.FC<LeadFormProps> = ({ initialService = "Both", onS
       </div>
 
       <p className="text-[11px] text-slate-500 text-center pt-1">
-        🔒 Your contact information is kept strictly private. No spam. Rapid technical dispatch across Kenya.
+        🔒 Your contact information is kept strictly private. No spam. Rapid
+        technical dispatch across Kenya.
       </p>
     </form>
   );

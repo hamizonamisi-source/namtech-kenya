@@ -1,6 +1,7 @@
 # NamiTech Kenya - Modern Responsive Website & SEO Implementation
 
 ## 1. Project Overview & Identity
+
 - **Brand Name**: NamiTech Kenya
 - **Tagline**: Connecting & Securing the Nation
 - **Target Market**: Kenya (Nairobi, Kiambu, Mombasa, Kisumu, Nakuru, Eldoret & Nationwide)
@@ -11,14 +12,15 @@
 ---
 
 ## 2. Multi-Page Architecture & Route Map
+
 1. **Home (`/`)**:
    - High-impact cyber-network hero with full integration of the supplied NamiTech master graphic.
-   - Exact headline: *"Fast Internet & Advanced CCTV Installation in Kenya"*.
-   - Exact subheadline: *"NamiTech delivers high-speed networking, reliable home/office internet setups, and 24/7 security camera solutions."*
+   - Exact headline: _"Fast Internet & Advanced CCTV Installation in Kenya"_.
+   - Exact subheadline: _"NamiTech delivers high-speed networking, reliable home/office internet setups, and 24/7 security camera solutions."_
    - Clear conversion CTAs: **[Get a Free Quote]** (smoothly links to Contact form & opens dynamic modal) and **[Call Us: +254 738 735 545]**.
    - Core Services split: **Internet & Networking Setup** and **CCTV & Security Solutions**.
    - Interactive **Kenyan Installation Cost Estimator (KES)** with real-time budget calculations.
-   - **Why Choose NamiTech?** section highlighting *Local Expertise*, *Fast Installation (24-48h)*, and *24/7 Support & Maintenance*.
+   - **Why Choose NamiTech?** section highlighting _Local Expertise_, _Fast Installation (24-48h)_, and _24/7 Support & Maintenance_.
    - Local social proof and client testimonials from Nairobi, Mombasa, and Kisumu.
    - Comprehensive Lead Form with Kenyan phone formatting and WhatsApp auto-redirect.
 
@@ -35,6 +37,7 @@
 ---
 
 ## 3. SEO Keyword Matrix (Kenyan Market)
+
 - **Primary Keywords Targeted**:
   - `Internet installation services Kenya`
   - `CCTV installation Kenya`
@@ -52,6 +55,7 @@
 ---
 
 ## 4. Visual Assets & Media Strategy
+
 - **Master Hero Graphic**: Uploaded to WebDev cloud storage (`/manus-storage/namitech-hero_36867b26.jpg`) and prominently featured in the Hero section and meta tags.
 - **Micro-Assets**:
   - Server rack and neat cabling highlight: `/manus-storage/service-networking-rack_7442e541.jpg`
@@ -63,6 +67,7 @@
 ---
 
 ## 5. Conversion & Mobile Features
+
 - **Sticky Contact Bar**: Top ticker with 24/7 rapid tech dispatch notices.
 - **Floating Contact Hub**: Quick action WhatsApp icon + direct phone call button available on every screen.
 - **Smart Kenyan Lead Form**: Allows users to select Internet, CCTV, or Both, with instantaneous WhatsApp message generation for zero friction.
@@ -81,11 +86,11 @@ All website images are bundled under `client/public/assets/` and referenced with
 
 Connect the repository in Netlify and keep the detected settings, or enter the following values manually:
 
-| Setting | Value |
-|---|---|
-| Build command | `pnpm build` |
+| Setting           | Value         |
+| ----------------- | ------------- |
+| Build command     | `pnpm build`  |
 | Publish directory | `dist/public` |
-| Node version | `22` |
+| Node version      | `22`          |
 
 The site is frontend-only. No environment variables are required for the current WhatsApp, call, email, and client-side quote form actions. The lead form currently confirms the request in-browser and offers a pre-filled WhatsApp handoff; connect a form provider or backend endpoint later if submissions need to be persisted.
 

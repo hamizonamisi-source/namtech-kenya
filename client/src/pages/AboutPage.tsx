@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "wouter";
-import { 
-  Compass, 
-  Zap, 
-  Clock, 
-  ShieldCheck, 
-  Users, 
-  CheckCircle, 
-  MapPin, 
-  Phone, 
-  MessageSquare, 
-  ArrowRight 
+import {
+  Compass,
+  Zap,
+  Clock,
+  ShieldCheck,
+  Users,
+  CheckCircle,
+  MapPin,
+  Phone,
+  MessageSquare,
+  ArrowRight,
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -36,7 +36,9 @@ export default function AboutPage() {
               Connecting & Securing Kenyan Homes & Businesses
             </h1>
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-              We are a dedicated Kenyan ICT, networking, and surveillance engineering firm. Our mission is delivering rock-solid connectivity and reliable 24/7 security systems.
+              We are a dedicated Kenyan ICT, networking, and surveillance
+              engineering firm. Our mission is delivering rock-solid
+              connectivity and reliable 24/7 security systems.
             </p>
           </div>
         </section>
@@ -53,20 +55,35 @@ export default function AboutPage() {
                   Kenyan Practical Expertise Built for Local Realities
                 </h2>
                 <p className="text-slate-300 text-base leading-relaxed">
-                  Founded with a clear focus on overcoming common connectivity frustrations—such as poor WiFi coverage in concrete walls, tangled cables, and substandard surveillance cameras that fail in low light—NamiTech brings structured engineering discipline to every installation.
+                  Founded with a clear focus on overcoming common connectivity
+                  frustrations—such as poor WiFi coverage in concrete walls,
+                  tangled cables, and substandard surveillance cameras that fail
+                  in low light—NamiTech brings structured engineering discipline
+                  to every installation.
                 </p>
                 <p className="text-slate-300 text-base leading-relaxed">
-                  Whether you are an estate homeowner in Nairobi needing flawless internet across multiple floors, or a logistics company in Mombasa requiring perimeter CCTV and central control, we supply tested hardware and neat workmanship.
+                  Whether you are an estate homeowner in Nairobi needing
+                  flawless internet across multiple floors, or a logistics
+                  company in Mombasa requiring perimeter CCTV and central
+                  control, we supply tested hardware and neat workmanship.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 pt-4 border-t border-slate-800">
                   <div className="space-y-1">
-                    <p className="text-2xl font-extrabold text-cyan-400 font-['Space_Grotesk']">500+</p>
-                    <p className="text-xs text-slate-400">Installations Across Kenya</p>
+                    <p className="text-2xl font-extrabold text-cyan-400 font-['Space_Grotesk']">
+                      500+
+                    </p>
+                    <p className="text-xs text-slate-400">
+                      Installations Across Kenya
+                    </p>
                   </div>
                   <div className="space-y-1">
-                    <p className="text-2xl font-extrabold text-cyan-400 font-['Space_Grotesk']">99.8%</p>
-                    <p className="text-xs text-slate-400">Network Uptime Guarantee</p>
+                    <p className="text-2xl font-extrabold text-cyan-400 font-['Space_Grotesk']">
+                      99.8%
+                    </p>
+                    <p className="text-xs text-slate-400">
+                      Network Uptime Guarantee
+                    </p>
                   </div>
                 </div>
               </div>
@@ -79,8 +96,12 @@ export default function AboutPage() {
                     className="w-full h-auto object-cover"
                   />
                   <div className="p-4 bg-slate-900/90 border-t border-slate-800">
-                    <p className="text-sm font-bold text-white">Central Support & Rapid Dispatch Team</p>
-                    <p className="text-xs text-cyan-300">Monitored infrastructure & certified technicians</p>
+                    <p className="text-sm font-bold text-white">
+                      Central Support & Rapid Dispatch Team
+                    </p>
+                    <p className="text-xs text-cyan-300">
+                      Monitored infrastructure & certified technicians
+                    </p>
                   </div>
                 </div>
               </div>
@@ -109,7 +130,9 @@ export default function AboutPage() {
                   Local Expertise
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed">
-                  Tailored networking and surveillance solutions built for Kenyan businesses and homes. We recommend hardware resilient to local power fluctuations and outdoor tropical conditions.
+                  Tailored networking and surveillance solutions built for
+                  Kenyan businesses and homes. We recommend hardware resilient
+                  to local power fluctuations and outdoor tropical conditions.
                 </p>
               </div>
 
@@ -121,7 +144,9 @@ export default function AboutPage() {
                   Fast Installation
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed">
-                  Rapid deployment with neat, structured cabling and minimal downtime. Our technicians arrive with all tools and fixtures to complete standard installations in 24 to 48 hours.
+                  Rapid deployment with neat, structured cabling and minimal
+                  downtime. Our technicians arrive with all tools and fixtures
+                  to complete standard installations in 24 to 48 hours.
                 </p>
               </div>
 
@@ -133,7 +158,9 @@ export default function AboutPage() {
                   24/7 Support & Maintenance
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed">
-                  Dedicated technical assistance whenever you need it. We assist with app reconfiguration, password resets, camera clean-ups, and proactive link checks.
+                  Dedicated technical assistance whenever you need it. We assist
+                  with app reconfiguration, password resets, camera clean-ups,
+                  and proactive link checks.
                 </p>
               </div>
             </div>
@@ -147,13 +174,19 @@ export default function AboutPage() {
               Service Areas in Kenya
             </h2>
             <p className="text-slate-300 text-base">
-              NamiTech field engineers are on standby for prompt site assessments in:
+              NamiTech field engineers are on standby for prompt site
+              assessments in:
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-left">
               {KENYA_LOCATIONS.map((loc, i) => (
-                <div key={i} className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-3">
+                <div
+                  key={i}
+                  className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-3"
+                >
                   <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                  <span className="text-xs text-slate-200 font-medium">{loc}</span>
+                  <span className="text-xs text-slate-200 font-medium">
+                    {loc}
+                  </span>
                 </div>
               ))}
             </div>

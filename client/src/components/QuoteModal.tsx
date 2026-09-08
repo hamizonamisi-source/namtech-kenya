@@ -3,11 +3,11 @@ import { X, MessageSquare, Phone } from "lucide-react";
 import { BRAND } from "../data/namitechData";
 import { LeadForm } from "./LeadForm";
 
-export const QuoteModal: React.FC<{ isOpen: boolean; onClose: () => void; initialService?: any }> = ({
-  isOpen,
-  onClose,
-  initialService = "Both"
-}) => {
+export const QuoteModal: React.FC<{
+  isOpen: boolean;
+  onClose: () => void;
+  initialService?: any;
+}> = ({ isOpen, onClose, initialService = "Both" }) => {
   if (!isOpen) return null;
 
   return (
@@ -44,7 +44,9 @@ export const QuoteModal: React.FC<{ isOpen: boolean; onClose: () => void; initia
   );
 };
 
-export const FloatingContactBar: React.FC<{ onOpenQuote: () => void }> = ({ onOpenQuote }) => {
+export const FloatingContactBar: React.FC<{ onOpenQuote: () => void }> = ({
+  onOpenQuote,
+}) => {
   return (
     <div className="fixed bottom-4 right-4 z-40 flex flex-col items-end gap-2.5">
       {/* WhatsApp float button */}
